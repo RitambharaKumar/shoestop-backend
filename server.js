@@ -24,8 +24,8 @@ const startServer = async ()=>{
        
         await connectDB(process.env.mongoURI)
         console.log('connected to db');
-        app.listen(port , ()=>{
-            console.log(`server started at ${port}`);
+        app.listen(5000 , ()=>{
+            console.log("server started at 5000");
         })
     }
     catch(error){
